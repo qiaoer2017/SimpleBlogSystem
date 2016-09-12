@@ -30,7 +30,7 @@ if (!isset($content) || empty($content)) {
     exit();
 }
 
-$query = "INSERT INTO article(title,author,description,content,dateline) VALUES('$title','$author','$description','$content','$dateline')";
+$query = "INSERT INTO article(title,author,description,content,dateline) VALUES('$title','$author','$description','$content',$dateline)";
 //echo $query;
 if (mysql_query($query)) {
     echo "<script>alert('文章发布成功!');window.location.href='article-add.php';</script>";
