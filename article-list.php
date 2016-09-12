@@ -75,7 +75,7 @@ if ($res && mysql_num_rows($res)) {
         <ul>
             <li id="search">
                 <h2><b class="text1">Search</b></h2>
-                <form method="get" action="article.search.php">
+                <form method="get" action="article-search.php">
                     <fieldset>
                         <input type="text" id="s" name="key" value=""/>
                         <input type="submit" id="x" value="Search"/>

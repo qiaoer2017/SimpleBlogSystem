@@ -28,7 +28,7 @@
 	</div>
 	<div id="menu">
 		<ul>
-			<li class="active"><a href="article.list.php">文章</a></li>
+			<li class="active"><a href="article-list.php">文章</a></li>
 			<li><a href="about.php">关于我们</a></li>
 			<li><a href="contact.php">联系我们</a></li>
 		</ul>
@@ -53,7 +53,7 @@
 				<?php echo $value['description']?>
 			</div>
 			<div class="meta">
-				<p class="links"><a href="article.show.php?id=<?php echo $value['id']?>" class="more">查看详细</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;</p>
+				<p class="links"><a href="article-show.php?id=<?php echo $value['id']?>" class="more">查看详细</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;</p>
 			</div>
 		</div>
 	<?php
@@ -67,9 +67,9 @@
 		<ul>
 			<li id="search">
 				<h2><b class="text1">Search</b></h2>
-				<form method="get" action="">
+				<form method="get" action="#">
 					<fieldset>
-					<input type="text" id="s" name="s" value="" />
+					<input type="text" id="s" name="key" value="" />
 					<input type="submit" id="x" value="Search" />
 					</fieldset>
 				</form>
