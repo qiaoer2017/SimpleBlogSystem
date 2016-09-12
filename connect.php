@@ -5,7 +5,7 @@
  * Date: 16/9/12
  * Time: 15:23
  */
-include 'config.php';
+require_once 'config.php';
 $conn = mysql_connect(HOST, USERNAME, PASSWORD);
 if (!$conn) {
     echo mysql_error();
